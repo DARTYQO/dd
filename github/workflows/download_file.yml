@@ -2,7 +2,7 @@ name: Download File
 
 on:
   schedule:
-    - cron: '15 22 * * *' # רץ בשעה 22:15 (22:15 UTC) כל יום
+    - cron: '45 22 * * *' # רץ בשעה 22:15 (22:15 UTC) כל יום
 jobs:
   download:
     runs-on: ubuntu-latest
