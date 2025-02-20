@@ -1,3 +1,4 @@
+import os
 import requests
 
 def download_file(url, filename):
@@ -6,6 +7,6 @@ def download_file(url, filename):
         file.write(response.content)
 
 if __name__ == "__main__":
-    url = "YOUR_FILE_URL_HERE"
+    url = os.getenv('FILE_URL')
     filename = "downloaded_file"
     download_file(url, filename)
