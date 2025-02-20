@@ -1,8 +1,10 @@
 name: Download File
 
 on:
+  push:
+  pull_request:
   schedule:
-    - cron: '52 20 20 2 *' # רץ בשעה 20:52 (22:52 UTC) ב-20 בפברואר
+    - cron: '*/2 * * * *' # רץ כל שתי דקות
 jobs:
   download:
     runs-on: ubuntu-latest
