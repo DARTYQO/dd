@@ -3,10 +3,6 @@ name: Download File
 on:
   schedule:
     - cron: '15 22 * * *' # רץ בשעה 22:15 (22:15 UTC) כל יום
-  push:
-    branches:
-      - main
-
 jobs:
   download:
     runs-on: ubuntu-latest
@@ -20,7 +16,9 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install -r requirements.txt
 
       - name: Download file
         run: python download_file.py
+        env:
+          FILE_URL: "https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/"
