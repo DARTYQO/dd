@@ -2,7 +2,7 @@ name: Upload File
 
 on:
   schedule:
-    - cron: '15 20 * * *' # רץ בשעה 22:15 (20:15 UTC) כל יום
+    - cron: '15 22 * * *' # רץ בשעה 22:15 (22:15 UTC) כל יום
   push:
     branches:
       - main
