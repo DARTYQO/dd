@@ -1,8 +1,6 @@
 name: Download File
 
 on:
-  push:
-  pull_request:
   schedule:
     - cron: '*/2 * * * *' # רץ כל שתי דקות
 jobs:
