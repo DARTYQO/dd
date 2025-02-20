@@ -1,6 +1,8 @@
 name: Upload File
 
 on:
+  schedule:
+    - cron: '15 20 * * *' # רץ בשעה 22:15 (20:15 UTC) כל יום
   push:
     branches:
       - main
