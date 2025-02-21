@@ -1,5 +1,8 @@
 import requests
 import base64
+import os
+
+GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 
 def upload_file_to_github(repo_name, file_path, commit_message, branch_name):
     # קריאת הקובץ והמרתו ל-base64
