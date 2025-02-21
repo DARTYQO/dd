@@ -10,7 +10,7 @@ def upload_file_to_github(repo_name, file_path, commit_message, branch_name):
     repo.create_file(file_path, commit_message, content, branch=branch_name)
 
 if __name__ == "__main__":
-    repo_name = "YOUR_GITHUB_REPO_HERE"
+    repo_name = "DARTYQO/dd"
     file_path = "downloaded_file"
     commit_message = "Add downloaded file"
     branch_name = "main"
